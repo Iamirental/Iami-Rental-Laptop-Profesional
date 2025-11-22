@@ -723,8 +723,6 @@ Website Iami Rental Laptop Profesional Jabodetabek
                     </div>
                     <h3>Dukungan 24/7</h3>
                     <p>Tim support siap membantu Anda kapan saja selama masa rental berlangsung untuk troubleshooting dan bantuan teknis memastikan laptop dalam kondisi optimal sebelum disewa.</p>
-        
-              </div>
             </div>
         </div>
     </section>
