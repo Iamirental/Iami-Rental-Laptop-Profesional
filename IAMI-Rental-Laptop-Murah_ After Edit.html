@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Laptop Profesional Jakarta | Laptop Sewa Harian, Mingguan & Bulanan</title>
+    <meta name="description" content="Rental laptop terpercaya di Jakarta. Sewa laptop harian, Mingguan, dan bulanan untuk event, seminar, training, Test/ujian online. Laptop standar, Menengah, dan premium tersedia. Hubungi +62 896-1619-2112">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        
+        :root { 
+            --primary: #2563eb; 
+            --primary-dark: #1d4ed8; 
+            --secondary: #f97316; 
+            --dark: #1e293b; 
+            --light: #f8fafc; 
+            --gray: #64748b; 
+        }
+        
+        body { 
+            background-color: var(--light); 
+            color: var(--dark); 
+            line-height: 1.6; 
+        }
+        
+        .container { 
+            width: 90%; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 15px; 
+        }
+        
+        section { 
+            padding: 80px 0; 
+        }
+        
+        h1, h2, h3, h4 { 
+            margin-bottom: 1rem; 
+            line-height: 1.2; 
+        }
+        
+        h1 { 
+            font-size: 2.8rem; 
+            font-weight: 700; 
+        }
+        
+        h2 { 
+            font-size: 2.3rem; 
+            text-align: center; 
+            margin-bottom: 3rem; 
+            position: relative; 
+        }
+        
+        h2:after { 
+            content: ''; 
+            position: absolute; 
+            bottom: -10px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 80px; 
+            height: 4px; 
+            background: var(--primary); 
+            border-radius: 2px; 
+        }
+        
+        p { 
+            margin-bottom: 1.5rem; 
+            color: var(--gray); 
+        }
+        
+        .btn { 
+            display: inline-block; 
+            padding: 14px 32px; 
+            background: var(--primary); 
+            color: white; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: all 0.3s ease; 
+            border: none; 
+            cursor: pointer; 
+            font-size: 1.1rem; 
+            text-align: center; 
+        }
+        
+        .btn:hover { 
+            background: var(--primary-dark); 
+            transform: translateY(-3px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+        }
+        
+        .btn-secondary { 
+            background: var(--secondary); 
+        }
+        
+        .btn-secondary:hover { 
+            background: #ea580c; 
+        }
+        
+        .btn-whatsapp { 
+            background: #25D366; 
+        }
+        
+        .btn-whatsapp:hover { 
+            background: #128C7E; 
+        }
+        
+        /* Header */
+        header { 
+            background: white; 
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); 
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        
+        .navbar { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 18px 0; 
+        }
+        
+        .logo { 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            color: var(--primary); 
+            text-decoration: none; 
+            display: flex; 
+            align-items: center; 
+        }
+        
+        .logo span { 
+            color: var(--secondary); 
+        }
+        
+        .logo i { 
+            margin-right: 10px; 
+            font-size: 2rem; 
+        }
+        
+        .nav-links { 
+            display: flex; 
+            list-style: none; 
+        }
+        
+        .nav-links li { 
+            margin-left: 30px; 
+        }
+        
+        .nav-links a { 
+            text-decoration: none; 
+            color: var(--dark); 
+            font-weight: 500; 
+            transition: color 0.3s; 
+            font-size: 1.1rem; 
+        }
+        
+        .nav-links a:hover { 
+            color: var(--primary); 
+        }
+        
+        .mobile-menu { 
+            display: none; 
+            font-size: 1.5rem; 
+            cursor: pointer; 
+        }
+        
+        /* Hero Section */
+        .hero { 
+            padding-top: 150px; 
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); 
+            position: relative; 
+            overflow: hidden; 
+        }
+        
+        .hero-content { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+        }
+        
+        .hero-text { 
+            flex: 1; 
+            padding-right: 50px; 
+        }
+        
+        .hero-text h1 { 
+            margin-bottom: 1.5rem; 
+            color: var(--dark); 
+        }
+        
+        .hero-text p { 
+            font-size: 1.3rem; 
+            margin-bottom: 2.5rem; 
+            color: var(--gray); 
+        }
+        
+        .hero-buttons { 
+            display: flex; 
+            gap: 15px; 
+            flex-wrap: wrap; 
+        }
+        
+        .hero-image { 
+            flex: 1; 
+            text-align: center; 
+        }
+        
+        .hero-image img { 
+            max-width: 100%; 
+            animation: float 3s ease-in-out infinite; 
+        }
+        
+        @keyframes float { 
+            0% { transform: translateY(0px); } 
+            50% { transform: translateY(-20px); } 
+            100% { transform: translateY(0px); } 
+        }
+        
+        /* Features Section */
+        .features { 
+            background: white; 
+        }
+        
+        .features-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+        
+        .feature-card { 
+            background: white; 
+            border-radius: 12px; 
+            padding: 35px 25px; 
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            text-align: center; 
+            border: 1px solid #f1f5f9; 
+        }
+        
+        .feature-card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); 
+        }
+        
+        .feature-icon { 
+            font-size: 3rem; 
+            color: var(--primary); 
+            margin-bottom: 25px; 
+        }
+        
+        .feature-card h3 { 
+            font-size: 1.5rem; 
+            margin-bottom: 15px; 
+        }
+        
+        /* Products Section */
+        .products { 
+            background: #f8fafc; 
+        }
+        
+        .products-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 30px; 
+        }
+        
+        .product-card { 
+            background: white; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            border: 1px solid #f1f5f9; 
+        }
+        
+        .product-card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); 
+        }
+        
+        .product-image { 
+            height: 200px; 
+            background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: var(--primary); 
+            font-size: 4rem; 
+        }
+        
+        .product-info { 
+            padding: 25px; 
+        }
+        
+        .product-info h3 { 
+            font-size: 1.4rem; 
+            margin-bottom: 15px; 
+        }
+        
+        .product-specs { 
+            list-style: none; 
+            margin: 15px 0; 
+        }
+        
+        .product-specs li { 
+            margin-bottom: 10px; 
+            color: var(--gray); 
+            display: flex; 
+            align-items: center; 
+        }
+        
+        .product-specs li i { 
+            color: var(--primary); 
+            margin-right: 10px; 
+            width: 20px; 
+        }
+        
+        .product-price { 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            color: var(--primary); 
+            margin: 20px 0; 
+            text-align: center; 
+        }
+        
+        .product-actions { 
+            display: flex; 
+            gap: 10px; 
+        }
+        
+        .product-actions .btn { 
+            flex: 1; 
+            padding: 12px; 
+            font-size: 1rem; 
+        }
+        
+        /* Testimonials */
+        .testimonials { 
+            background: white; 
+        }
+        
+        .testimonials-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+        
+        .testimonial-card { 
+            background: white; 
+            border-radius: 12px; 
+            padding: 30px; 
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); 
+            position: relative; 
+            border: 1px solid #f1f5f9; 
+        }
+        
+        .testimonial-text { 
+            font-style: italic; 
+            margin-bottom: 20px; 
+            font-size: 1.1rem; 
+            line-height: 1.7; 
+        }
+        
+        .testimonial-author { 
+            display: flex; 
+            align-items: center; 
+        }
+        
+        .author-avatar { 
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            background: var(--primary); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: white; 
+            font-weight: bold; 
+            margin-right: 15px; 
+            font-size: 1.2rem; 
+        }
+        
+        .author-info h4 { 
+            margin-bottom: 5px; 
+        }
+        
+        .author-info p { 
+            margin: 0; 
+            color: var(--gray); 
+            font-size: 0.9rem; 
+        }
+        
+        /* CTA Section */
+        .cta { 
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); 
+            color: white; 
+            text-align: center; 
+            padding: 100px 0; 
+        }
+        
+        .cta h2 { 
+            color: white; 
+            margin-bottom: 1.5rem; 
+        }
+        
+        .cta h2:after { 
+            background: white; 
+        }
+        
+        .cta p { 
+            color: #e2e8f0; 
+            max-width: 700px; 
+            margin: 0 auto 2.5rem; 
+            font-size: 1.2rem; 
+        }
+        
+        .cta .btn { 
+            background: white; 
+            color: var(--primary); 
+            font-size: 1.2rem; 
+            padding: 16px 40px; 
+        }
+        
+        .cta .btn:hover { 
+            background: #f1f5f9; 
+        }
+        
+        /* Contact Section */
+        .contact { 
+            background: white; 
+        }
+        
+        .contact-container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 50px; 
+        }
+        
+        .contact-info h3 { 
+            margin-bottom: 25px; 
+            font-size: 1.8rem; 
+        }
+        
+        .contact-details { 
+            list-style: none; 
+        }
+        
+        .contact-details li { 
+            margin-bottom: 20px; 
+            display: flex; 
+            align-items: flex-start; 
+        }
+        
+        .contact-details li i { 
+            color: var(--primary); 
+            margin-right: 15px; 
+            font-size: 1.3rem; 
+            width: 25px; 
+            margin-top: 3px; 
+        }
+        
+        .contact-actions { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 15px; 
+            margin-top: 30px; 
+        }
+        
+        .contact-actions .btn { 
+            flex: 1; 
+            min-width: 200px; 
+        }
+        
+        .contact-form { 
+            background: #f8fafc; 
+            padding: 35px; 
+            border-radius: 12px; 
+            border: 1px solid #e2e8f0; 
+        }
+        
+        .form-group { 
+            margin-bottom: 20px; 
+        }
+        
+        .form-group label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: 500; 
+        }
+        
+        .form-control { 
+            width: 100%; 
+            padding: 14px 15px; 
+            border: 1px solid #cbd5e1; 
+            border-radius: 8px; 
+            font-size: 1rem; 
+            transition: border 0.3s; 
+        }
+        
+        .form-control:focus { 
+            outline: none; 
+            border-color: var(--primary); 
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); 
+        }
+        
+        /* Footer */
+        footer { 
+            background: var(--dark); 
+            color: white; 
+            padding: 60px 0 30px; 
+        }
+        
+        .footer-content { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 40px; 
+            margin-bottom: 40px; 
+        }
+        
+        .footer-column h3 { 
+            color: white; 
+            margin-bottom: 20px; 
+            font-size: 1.3rem; 
+        }
+        
+        .footer-links { 
+            list-style: none; 
+        }
+        
+        .footer-links li { 
+            margin-bottom: 12px; 
+        }
+        
+        .footer-links a { 
+            color: #cbd5e1; 
+            text-decoration: none; 
+            transition: color 0.3s; 
+        }
+        
+        .footer-links a:hover { 
+            color: white; 
+        }
+        
+        .copyright { 
+            text-align: center; 
+            padding-top: 30px; 
+            border-top: 1px solid #334155; 
+            color: #94a3b8; 
+            font-size: 0.9rem; 
+        }
+        
+        .google-business { 
+            background: #4285F4; 
+            color: white; 
+            padding: 15px 25px; 
+            border-radius: 8px; 
+            display: inline-flex; 
+            align-items: center; 
+            text-decoration: none; 
+            font-weight: 600; 
+            margin-top: 20px; 
+            transition: all 0.3s; 
+        }
+        
+        .google-business:hover { 
+            background: #3367D6; 
+            transform: translateY(-3px); 
+        }
+        
+        .google-business i { 
+            margin-right: 10px; 
+            font-size: 1.2rem; 
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) { 
+            h1 { 
+                font-size: 2.3rem; 
+            } 
+            
+            h2 { 
+                font-size: 2rem; 
+            } 
+            
+            .hero-content { 
+                flex-direction: column; 
+            } 
+            
+            .hero-text { 
+                padding-right: 0; 
+                margin-bottom: 50px; 
+                text-align: center; 
+            } 
+            
+            .hero-buttons { 
+                justify-content: center; 
+            } 
+        } 
+        
+        @media (max-width: 768px) { 
+            .nav-links { 
+                display: none; 
+            } 
+            
+            .mobile-menu { 
+                display: block; 
+            } 
+            
+            section { 
+                padding: 60px 0; 
+            } 
+            
+            h1 { 
+                font-size: 2rem; 
+            } 
+            
+            h2 { 
+                font-size: 1.8rem; 
+            } 
+            
+            .hero { 
+                padding-top: 130px; 
+            } 
+            
+            .contact-actions .btn { 
+                min-width: 100%; 
+            } 
+        } 
+        
+        @media (max-width: 480px) { 
+            .hero-buttons { 
+                flex-direction: column; 
+            } 
+            
+            .hero-buttons .btn { 
+                width: 100%; 
+            } 
+            
+            .product-actions { 
+                flex-direction: column; 
+            } 
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-laptop"></i>
+                    IAMI<span> RENTAL LAPTOP</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#features">Keunggulan</a></li>
+                    <li><a href="#products">Laptop</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Rental Laptop Profesional untuk Semua Kebutuhan Anda</h1>
+                    <p>Solusi terpercaya sewa laptop harian, Mingguan & bulanan di Jabodetabek. Laptop berkualitas dengan harga terjangkau untuk event, seminar, training, test/ujian online dan pekerjaan temporer.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/6289616192112?text=Halo,%20saya%20ingin%20rental%20laptop" class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                        <a href="#products" class="btn">Lihat Katalog Laptop</a>
+                        <a href="#contact" class="btn btn-secondary">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <i class="fas fa-laptop-code" style="font-size: 300px; color: #2563eb;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Mengapa Memilih Rental Laptop Kami?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Terpercaya & Berpengalaman</h3>
+                    <p>Lebih dari 5 tahun melayani rental laptop untuk perusahaan, event organizer, dan individu untuk test online CPNS, Ujian Sekolah, dsb dengan reputasi terjamin.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Proses Cepat & Mudah</h3>
+                    <p>Pemesanan mudah via WhatsApp, proses administrasi simpel, dan bisa diambil di toko atau dikirim cepat ke lokasi Anda.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Dukungan 24/7</h3>
+                    <p>Tim support siap membantu Anda kapan saja selama masa rental berlangsung untuk troubleshooting dan bantuan teknis memastikan laptop dalam kondisi optimal sebelum disewa.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Pilihan Laptop Sewa Kami</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Standar</h3>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-microchip"></i> Intel Core i5</li>
+                            <li><i class="fas fa-memory"></i> RAM 4GB DDR4</li>
+                            <li><i class="fas fa-hdd"></i> SSD 256GB</li>
+                            <li><i class="fas fa-desktop"></i> Layar 13.8-14" HD</li>
+                            <li><i class="fas fa-windows"></i> Windows 10/11 Pro</li>
+                        </ul>
+                        <div class="product-price">Rp 125.000/hari</div>
+                        <div class="product-actions">
+                            <a href="https://wa.me/6289616192112?text=Halo,%20saya%20ingin%20sewa%20Laptop%20Standar" class="btn btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Pesan
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Menengah</h3>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-microchip"></i> Intel Core i5</li>
+                            <li><i class="fas fa-memory"></i> RAM 8GB DDR4</li>
+                            <li><i class="fas fa-hdd"></i> SSD 512GB</li>
+                            <li><i class="fas fa-desktop"></i> Layar 13.8-14" FHD</li>
+                            <li><i class="fas fa-windows"></i> Windows 10/11 Pro</li>
+                        </ul>
+                        <div class="product-price">Rp 150.000/hari</div>
+                        <div class="product-actions">
+                            <a href="https://wa.me/6289616192112?text=Halo,%20saya%20ingin%20sewa%20Laptop%20Menengah" class="btn btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Pesan
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Premium</h3>
+                        <ul class="product-specs">
+                            <li><i class="fas fa-microchip"></i> Intel Core i7</li>
+                            <li><i class="fas fa-memory"></i> RAM 16GB DDR4</li>
+                            <li><i class="fas fa-hdd"></i> SSD 512-1TB NVMe</li>
+                            <li><i class="fas fa-desktop"></i> Layar 13.8-14" FHD IPS</li>
+                            <li><i class="fas fa-windows"></i> Windows 10/11 Pro</li>
+                        </ul>
+                        <div class="product-price">Rp 225.000/hari</div>
+                        <div class="product-actions">
+                            <a href="https://wa.me/6289616192112?text=Halo,%20saya%20ingin%20sewa%20Laptop%20Premium" class="btn btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Pesan
+                            </a>
+                                           
+                    <a href="#contact" class="btn btn-secondary">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>Apa Kata Pelanggan Kami?</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Pelayanan sangat memuaskan! Laptop dalam kondisi prima dan pengiriman tepat waktu. Sangat recommended untuk event perusahaan. Harga juga kompetitif."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RR</div>
+                        <div class="author-info">
+                            <h4>Rudi Riono</h4>
+                            <p>Event Organizer - Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Saya rental laptop untuk kebutuhan training karyawan selama 2 minggu. Proses mudah, harga kompetitif, dan tim support sangat responsif. Will use again!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DR</div>
+                        <div class="author-info">
+                            <h4>Dinda Rahma</h4>
+                            <p>HR Manager - Perusahaan IT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Laptop gaming yang saya sewa performanya luar biasa. Cocok banget untuk kebutuhan editing video dan desain grafis project freelance saya. Recommended!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">KF</div>
+                        <div class="author-info">
+                            <h4>Kurniawan Faiz</h4>
+                            <p>Content Creator - Tangerang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Siap Memesan Laptop?</h2>
+            <p>Jangan ragu untuk menghubungi kami. Tim profesional kami siap membantu menemukan solusi terbaik untuk kebutuhan rental laptop Anda dengan harga terbaik.</p>
+            <a href="https://wa.me/6289616192112?text=Halo,%20saya%20ingin%20konsultasi%20sewa%20laptop" class="btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Konsultasi Gratis via WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informasi & Kontak Rental Laptop</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Alamat Toko</strong><br>
+                                Paramount Petals Cluster Gardenia, Cukanggalih Curuh-Tangerang<br>
+                                <small>(Depan Rumah Sakit Keluarga Kita)</small>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Telepon/WhatsApp</strong><br>
+                                +62 896-1619-2112<br>
+                                <small>Fast Response</small>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong><br>
+                                iamirental2020@gmail.com<br>
+                                <small>Untuk penawaran korporat</small>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Jam Operasional</strong><br>
+                                Senin - Minggu: 08.00 - 21.00 WIB<br>
+                                <small>Buka termasuk weekend</small>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="contact-actions">
+                        <a href="https://wa.me/6289616192112?text=Halo,%20saya%20ingin%20tanya%20tentang%20rental%20laptop" class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                        </a>
+                        <a href="tel:+6289616192112" class="btn">
+                            <i class="fas fa-phone"></i> Telepon Sekarang
+                        </a>
+                        <a href="https://g.page/r/CddxHkeaxe9yEB0/review" class="google-business" target="_blank">
+                            <i class="fab fa-google"></i> Kunjungi Google Business
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Form Pemesanan Cepat</h3>
+                    <form id="rental-form">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap *</label>
+                            <input type="text" id="name" class="form-control" required placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="email@contoh.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor WhatsApp *</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="+62 812-1234-XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="product">Jenis Laptop *</label>
+                            <select id="product" class="form-control" required>
+                                <option value="">Pilih Jenis Laptop</option>
+                                <option value="standard">Laptop Standar - Rp 125.000/hari</option>
+                                <option value="mid">Laptop Menengah - Rp 150.000/hari</option>
+                                <option value="premium">Laptop Premium - Rp 225.000/hari</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Durasi Rental (hari) *</label>
+                            <input type="number" id="duration" class="form-control" min="1" required placeholder="Contoh: 7">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan Tambahan</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Kebutuhan khusus, alamat pengiriman, dll."></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Kirim Permintaan Penawaran
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
