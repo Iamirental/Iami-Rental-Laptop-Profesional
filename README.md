@@ -1,5 +1,4 @@
-# Iami-Rental-Laptop-Profesional
-Website Iami Rental Laptop Profesional Jabodetabek
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
